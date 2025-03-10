@@ -17,8 +17,11 @@ body{
     align-items: center;
     border-right: 1px dashed #fff;
     border-left: 1px dashed #fff;
-    
+    opacity: 60%;
 
+    &:hover{
+    opacity: 100%;
+    }
 }
 
 .sportType:hover .sportIcon,
@@ -50,7 +53,7 @@ body{
     background-repeat: no-repeat;
     border-radius: 50%;
     position: absolute;
-    right: -900px;
+    right: 400px;
     top: 50px;
     /* opacity: 60%; */
     opacity: 0;
