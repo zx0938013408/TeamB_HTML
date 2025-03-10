@@ -33,19 +33,26 @@
 .navbar-actions {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* 搜尋列 */
 .search-container {
-  width: 400px;
-  height: 70px;
-  background: white;
-  border-radius: 8px;
-  border: 3px solid #29755D;
   display: flex;
   align-items: center;
-  padding: 5px 10px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+  margin-right:-20px; /* 確保與購物車、登入 icon 間距相等 */
+}
+
+.search-container.active {
+  width: 0;
+  height:70px;
+  border-radius: 8px;
+  border: 3px solid #29755D;
+  background: white;
+  width: 200px;
+  margin-right: 10px;
 }
 
 .search-input {
@@ -54,17 +61,24 @@
   outline: none;
   font-size: 20px;
   color: #8F8F8F;
+  display: none; /* 預設隱藏 */
 }
 
+.search-container.active .search-input {
+  display: block; /* 展開後顯示輸入框 */
+}
+
+
 /* 購物車、登入圖示 */
+.search-icon,
 .cart-icon,
 .login-icon {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #528F7C;
+  
 }
 
 /* 快速開團按鈕 */
@@ -597,6 +611,7 @@
 .activity-footer {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 /* ************** 購物商城 **************** */
 /* 避免與 Bootstrap 衝突，命名統一為 shop- */
@@ -613,7 +628,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  margin:0;
 }
 
 /* 標題區 */
@@ -684,6 +699,7 @@
 /* 查看更多 */
 .shop-footer {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 /* ************** 查看更多xx **************** */
@@ -780,6 +796,7 @@
   flex-shrink: 0;
   scroll-snap-align: start;
   display: flex;
+  flex-direction: column; /* 讓內容垂直排列 */
   justify-content: center;
   align-items: center;
   background-size: cover;
@@ -790,6 +807,15 @@
   font-weight: bold;
   position: relative;
 }
+/* 確保 h2 和 p 分行顯示 */
+.scroll-item h2, 
+.scroll-item p {
+  display: block; /* 確保它們是區塊元素 */
+  text-align: center; /* 讓文字置中 */
+  width: 100%; /* 確保佔滿整個父容器 */
+  margin-bottom: 10px; /* 給 p 標籤增加間距 */
+}
+
 
 /* 設定每個圖片區塊的背景 */
 #item1 { background: url('/public/photo/slogan-volleyball.png') center/cover no-repeat; }
@@ -802,19 +828,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw; /* 確保全屏寬度 */
+  height: 100vh; /* 確保全屏高度 */
   background: #2D5A4D;
 }
+
 
 /* 主要容器 */
 .contact-container {
   display: flex;
+  flex-wrap: wrap; /* 小螢幕時換行 */
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* 限制最大寬度，避免過寬 */
+  max-width: 900px; /* 防止太大 */
   background: transparent;
   border: 2px solid white;
   border-radius: 10px;
   padding: 40px;
-  width: 700px;
   gap: 40px;
 }
+
 
 /* 左側標題 */
 .contact-left {
@@ -822,12 +856,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  text-align: left;
   width: 40%;
+  min-width: 200px;
 }
 
-/* TeamB 標題 */
+/* 修正標題格式 */
 .contact-title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -835,32 +871,37 @@
 
 /* 副標題 */
 .contact-subtitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   color: white;
   margin-top: 10px;
 }
+
 
 /* 右側表單 */
 .contact-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
 }
 
 /* 表單標籤 */
 .contact-form label {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: white;
   margin-bottom: 5px;
+  display: block;
 }
 
-/* 輸入框 */
+/* 修正輸入框 */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
+  max-width: 400px; /* 限制最大寬度，防止溢出 */
   padding: 10px;
   font-size: 18px;
   color: #528F7C;
@@ -872,9 +913,10 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* 按鈕 */
+
 .contact-form button {
-  width: 100%;
+  width: 100%; /* 讓按鈕與輸入框保持一致 */
+  max-width: 400px; /* 限制最大寬度，避免過大 */
   padding: 12px;
   font-size: 20px;
   font-weight: 700;
@@ -883,8 +925,9 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: inset -2px -2px 10px rgba(41, 117, 93, 0.46);
   transition: all 0.3s ease;
+  display: block; /* 確保按鈕獨占一行 */
+  margin: 0 auto; /* 水平置中 */
 }
 
 /* 按鈕 Hover 效果 */
@@ -892,6 +935,7 @@
   background: #A8D5C5;
   font-size: 22px;
 }
+
 
 
 
