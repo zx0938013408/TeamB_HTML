@@ -1,3 +1,17 @@
-.sport{
+body{
     background-color: #004C34;
+}
+
+.sportType{
+    padding: 0;
+    margin: 0;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sportTitle{
+    color: #fff;
 }
