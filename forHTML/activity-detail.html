@@ -31,11 +31,11 @@
     <div class="container mx-auto imgContainer">
         <!-- 左側圖片區 -->
         <div class="eventImages">
-            <img src="./photo/img-shuttlecockCourt.jpg" alt="活動主圖" class="mainImage">
+            <img src="../public/photo/activity-shuttlecockCourt.jpg" alt="活動主圖" class="mainImage">
             <div class="thumbnailContainer">
-                <img src="./photo/img-shuttlecockCourt.jpg" alt="縮圖1" class="thumbnail">
-                <img src="./photo/img-shuttlecockCourt.jpg" alt="縮圖2" class="thumbnail">
-                <img src="./photo/img-shuttlecockCourt.jpg" alt="縮圖3" class="thumbnail">
+                <img src="../public/photo/activity-shuttlecockCourt.jpg" alt="縮圖1" class="thumbnail">
+                <img src="../public/photo/activity-shuttlecockCourt.jpg" alt="縮圖2" class="thumbnail">
+                <img src="../public/photo/activity-shuttlecockCourt.jpg" alt="縮圖3" class="thumbnail">
             </div>
         </div>
 
@@ -45,7 +45,7 @@
             <div class="title row">
                 <div class="titleIcons col-1">
                   <img
-                    src="./photo/icons/icon-shuttlecock.svg"
+                    src="../public/icon/icon-shuttlecock-green.svg"
                     alt=""
                     class="titleIcon col"
                   />
@@ -88,7 +88,7 @@
             <div class="eventActions row">
                 <button type="button" class="collect col-2">
                     <img
-                      src="./photo/icons/icon-heart.svg"
+                      src="../public/icon/icon-heart-green.svg"
                       alt="收藏按鈕"
                       class="heart"
                     />
@@ -127,72 +127,72 @@
                 <!-- 商品輪播區 -->
                 <div class="carousel">
                     <div class="product-card">
-                        <img src="./photo/shoes.png" alt="時尚上衣">
+                        <img src="../public/photo/shop-shoes.png" alt="時尚上衣">
                         <div class="product-info">
                             <h3>時尚上衣</h3>
                             <p class="price">NT$ 999,999</p>
                             <div class="icons">
                                 <span class="heart"><img
-                                    src="./photo/icons/icon-heart1.svg"
+                                    src="../public/icon/icon-heart-small.svg"
                                     alt="收藏按鈕"
                                     class="heartShop"/>
                                 </span>
                                 <span class="cart"><img
-                                    src="./photo/icons/icon-cart.svg"
+                                    src="../public/icon/icon-cart-green.svg"
                                     alt="收藏按鈕"
                                     class="heartShop"/></span>
                             </div>
                         </div>
                     </div>
                     <div class="product-card">
-                        <img src="./photo/shoes.png" alt="時尚上衣">
+                        <img src="../public/photo/shop-shoes.png" alt="時尚上衣">
                         <div class="product-info">
                             <h3>時尚上衣</h3>
                             <p class="price">NT$ 999,999</p>
                             <div class="icons">
                                 <span class="heart"><img
-                                    src="./photo/icons/icon-heart1.svg"
+                                    src="../public/icon/icon-heart-small.svg"
                                     alt="收藏按鈕"
                                     class="heartShop"/>
                                 </span>
                                 <span class="cart"><img
-                                    src="./photo/icons/icon-cart.svg"
+                                    src="../public/icon/icon-cart-green.svg"
                                     alt="收藏按鈕"
                                     class="heartShop"/></span>
                             </div>
                         </div>
                     </div>
                     <div class="product-card">
-                        <img src="./photo/shoes.png" alt="時尚上衣">
+                        <img src="../public/photo/shop-shoes.png" alt="時尚上衣">
                         <div class="product-info">
                             <h3>時尚上衣</h3>
                             <p class="price">NT$ 999,999</p>
                             <div class="icons">
                                 <span class="heart"><img
-                                    src="./photo/icons/icon-heart1.svg"
+                                    src="../public/icon/icon-heart-small.svg"
                                     alt="收藏按鈕"
                                     class="heartShop"/>
                                 </span>
                                 <span class="cart"><img
-                                    src="./photo/icons/icon-cart.svg"
+                                    src="../public/icon/icon-cart-green.svg"
                                     alt="收藏按鈕"
                                     class="heartShop"/></span>
                             </div>
                         </div>
                     </div>
                     <div class="product-card">
-                        <img src="./photo/shoes.png" alt="時尚上衣">
+                        <img src="../public/photo/shop-shoes.png" alt="時尚上衣">
                         <div class="product-info">
                             <h3>時尚上衣</h3>
                             <p class="price">NT$ 999,999</p>
                             <div class="icons">
                                 <span class="heart"><img
-                                    src="./photo/icons/icon-heart1.svg"
+                                    src="../public/icon/icon-heart-small.svg"
                                     alt="收藏按鈕"
                                     class="heartShop"/>
                                 </span>
                                 <span class="cart"><img
-                                    src="./photo/icons/icon-cart.svg"
+                                    src="../public/icon/icon-cart-green.svg"
                                     alt="收藏按鈕"
                                     class="heartShop"/></span>
                             </div>
@@ -234,10 +234,10 @@
       document.querySelector(".collect").addEventListener("click", function () {
         event.stopPropagation();
         const heartImg = this.querySelector(".heart"); // 選取按鈕內的 <img>
-        if (heartImg.src.includes("icon-heart.svg")) {
+        if (heartImg.src.includes("icon-heart-green.svg")) {
           heartImg.src = "./photo/icons/icon-heart-click.svg"; // 點擊後變成實心愛心
         } else {
-          heartImg.src = "./photo/icons/icon-heart.svg"; // 再次點擊變回空心愛心
+          heartImg.src = "../public/icon/icon-heart-green.svg"; // 再次點擊變回空心愛心
         }
       });
 

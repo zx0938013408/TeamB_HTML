@@ -78,7 +78,7 @@ body {
   padding: 0;
   width: 215px;
   height: 215px;
-  background-image: url("./photo/img-shuttlecockCourt.jpg");
+  background-image: url("../public/photo/activity-shuttlecockCourt.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@ body {
   padding: 0;
   width: 215px;
   height: 215px;
-  background-image: url("./photo/img-basketballCourt.jpg");
+  background-image: url("../public/photo/activity-basketballCourt.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@ body {
   padding: 0;
   width: 215px;
   height: 215px;
-  background-image: url("./photo/img-volleyballCourt.jpg");
+  background-image: url("../public/photo/activity-volleyballCourt.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
