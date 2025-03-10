@@ -3,6 +3,7 @@ body{
 }
 
 .sportType{
+    position: relative;
     padding: 0;
     margin: 0;
     height: 900px;
@@ -10,8 +11,61 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    
+
+}
+
+.sportType:hover .sportIcon,
+.sportType:hover .sportTitle {
+    transform: scale(1.5); /* 放大 1.5 倍 */
+    transition: transform 0.3s ease-in-out;
+    margin: 50px;
 }
 
 .sportTitle{
+    margin-top: 50px;
     color: #fff;
+
+    /* &:hover{
+        font-size: 64px;
+    } */
 }
+
+
+
+
+
+.sportPhoto{
+    width: 500px;
+    height: 500px;
+    background-image: url("../public/photo/activity-basketballCourt.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    right: -900px;
+    top: 50px;
+    opacity: 60%;
+    display: none;
+}
+
+.sportPhoto1Hover{
+    width: 500px;
+    height: 500px;
+    background-image: url("../public/photo/activity-basketballCourt.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    right: -900px;
+    top: 50px;
+    opacity: 60%;
+    transition: transform 0.3s ease-in-out;
+
+    /* display: none; */
+}
+
+
