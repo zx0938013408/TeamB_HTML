@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品頁面</title>
+    <link rel="stylesheet" href="./styles/shop_product_detail.css" />
+    <link rel="stylesheet" href="./icomoon/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC&family=Satisfy&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- section-a -->
+    <div class="a-container">
+      <div class="left-section">
+        <div class="main-image">
+          <img src="./products_pic/top-1.jpg" alt="商品圖片" />
+        </div>
+        <div class="thumbnail-images">
+          <img src="./products_pic/top-1.jpg" alt="縮略圖1" />
+          <img src="./products_pic/top-1.jpg" alt="縮略圖2" />
+          <img src="./products_pic/top-1.jpg" alt="縮略圖3" />
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="product-info">
+          <div class="product-name-section">
+            <div class="category">上衣</div>
+            <div class="product-name">商品名稱</div>
+          </div>
+          <div>
+            <span class="detail-price">NT$</span>
+            <span class="detail-price">999,999</span>
+          </div>
+        </div>
+        <div class="product-detail">
+          <select class="size-section">
+            <option class="dropdown">尺寸</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+
+          <div class="color-options">
+            <label class="color-btn black">
+              <input type="radio" name="color" value="black" />
+              <span></span>
+            </label>
+            <label class="color-btn white">
+              <input type="radio" name="color" value="white" />
+              <span></span>
+            </label>
+            <label class="color-btn gray">
+              <input type="radio" name="color" value="gray" />
+              <span></span>
+            </label>
+            <label class="color-btn red">
+              <input type="radio" name="color" value="red" />
+              <span></span>
+            </label>
+            <label class="color-btn blue">
+              <input type="radio" name="color" value="blue" />
+              <span></span>
+            </label>
+            <label class="color-btn green">
+              <input type="radio" name="color" value="green" />
+              <span></span>
+            </label>
+          </div>
+
+          <div class="quantity">
+            <select class="quantity-section">
+              <option class="dropdown" >數量</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <div class="stock">庫存：999 件</div>
+          </div>
+
+          <div class="buttons">
+            <button class="icon-button" id="toggleBtn">
+              <span class="icon-Property-1Default-3"></span>
+            </button>
+
+            <button class="btn-primary">加入購物車</button>
+            <button class="btn-secondary">立即購買</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-b -->
+    <div class="b-container">
+      <div class="title">商品詳情</div>
+      <div class="b-detail-section">
+        <img src="./products_pic/top-1.jpg" alt="商品詳情圖片" />
+        <img src="./products_pic/top-1.jpg" alt="商品詳情圖片" />
+        <img src="./products_pic/top-1.jpg" alt="商品詳情圖片" />
+      </div>
+    </div>
+
+    <!-- section-c -->
+    <div class="c-container">
+      <div class="title">大家還看了</div>
+      <div class="content">
+        <button class="icon-button" id="toggleBtn">
+          <span class="icon-Property-1Default-1"></span>
+        </button>
+        <div class="detail-section">
+          <div class="card">
+            <div class="img-container">
+              <img src="./products_pic/top-2.jpg" alt="時尚上衣" />
+            </div>
+            <div class="card-details">
+              <div class="product-title">時尚上衣</div>
+              <div class="price-container">
+                <div class="price">NT$ 999,999</div>
+                <button class="cart-icons" id="toggleBtn">
+                  <span class="icon-Property-1Default"></span>
+                  <span class="icon-cart"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img src="./products_pic/top-3.jpg" alt="時尚上衣" />
+            </div>
+            <div class="card-details">
+              <div class="product-title">時尚上衣</div>
+              <div class="price-container">
+                <div class="price">NT$ 999,999</div>
+                <button class="cart-icons" id="toggleBtn">
+                  <span class="icon-Property-1Default"></span>
+                  <span class="icon-cart"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img src="./products_pic/top-4.jpg" alt="時尚上衣" />
+            </div>
+            <div class="card-details">
+              <div class="product-title">時尚上衣</div>
+              <div class="price-container">
+                <div class="price">NT$ 999,999</div>
+                <button class="cart-icons" id="toggleBtn">
+                  <span class="icon-Property-1Default"></span>
+                  <span class="icon-cart"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img src="./products_pic/top-5.jpg" alt="時尚上衣" />
+            </div>
+            <div class="card-details">
+              <div class="product-title">時尚上衣</div>
+              <div class="price-container">
+                <div class="price">NT$ 999,999</div>
+                <button class="cart-icons" id="toggleBtn">
+                  <span class="icon-Property-1Default"></span>
+                  <span class="icon-cart"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="icon-button" id="toggleBtn">
+          <span class="icon-Property-1Default-2"></span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
