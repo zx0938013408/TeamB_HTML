@@ -20,6 +20,9 @@
     <title>活動選擇 - TeamB</title>
   </head>
   <body>
+    <div class="sportPhoto"></div>
+    <div class="sportPhoto1"></div>
+    <div class="sportPhoto2"></div>
     <div class="sport row">
       <div class="sportType basketball col">
         <img
@@ -28,13 +31,12 @@
           alt=""
         />
         <h3 class="sportTitle">籃球</h3>
-        <div class="sportPhoto"></div>
       </div>
       <div class="sportType volleyball col">
         <img
-          class="sportIcon"
-          src="../public/icon/icon-volleyball.png"
-          alt=""
+        class="sportIcon"
+        src="../public/icon/icon-volleyball.png"
+        alt=""
         />
         <h3 class="sportTitle">排球</h3>
       </div>
@@ -44,6 +46,7 @@
       </div>
     </div>
 
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -52,19 +55,42 @@
 
     <script>
       const basketball = document.querySelector(".basketball");
+      const volleyball = document.querySelector(".volleyball");
+      const shuttlecock = document.querySelector(".shuttlecock");
       const sportPhoto = document.querySelector(".sportPhoto"); // 選取按鈕內的 <img>
-        basketball.addEventListener("mouseover", function () {
-          sportPhoto.classList.remove("sportPhoto");
-          sportPhoto.classList.add("sportPhoto1Hover"); // 點擊後切換 class
-        });
+      const sportPhoto1 = document.querySelector(".sportPhoto1"); // 選取按鈕內的 <img>
+      const sportPhoto2 = document.querySelector(".sportPhoto2"); // 選取按鈕內的 <img>
+      basketball.addEventListener("mouseover", function () {
+        sportPhoto.classList.remove("sportPhoto");
+        sportPhoto.classList.add("sportPhotoHover"); // 點擊後切換 class
+      });
 
-        basketball.addEventListener("mouseout", function () {
-          sportPhoto.classList.remove("sportPhoto1Hover");
-          sportPhoto.classList.add("sportPhoto"); // 再次點擊切換回原本 class
-        });
-          console.log(basketball);
+      basketball.addEventListener("mouseout", function () {
+        sportPhoto.classList.remove("sportPhotoHover");
+        sportPhoto.classList.add("sportPhoto"); // 再次點擊切換回原本 class
+      });
+      // console.log(basketball);
 
+      volleyball.addEventListener("mouseover", function () {
+        sportPhoto.classList.remove("sportPhoto1");
+        sportPhoto.classList.add("sportPhoto1Hover"); // 點擊後切換 class
+      });
 
+      volleyball.addEventListener("mouseout", function () {
+        sportPhoto.classList.remove("sportPhoto1Hover");
+        sportPhoto.classList.add("sportPhoto1"); // 再次點擊切換回原本 class
+      });
+      // console.log(basketball);
+
+      shuttlecock.addEventListener("mouseover", function () {
+        sportPhoto.classList.remove("sportPhoto2");
+        sportPhoto.classList.add("sportPhoto2Hover"); // 點擊後切換 class
+      });
+
+      shuttlecock.addEventListener("mouseout", function () {
+        sportPhoto.classList.remove("sportPhoto2Hover");
+        sportPhoto.classList.add("sportPhoto2"); // 再次點擊切換回原本 class
+      });
     </script>
   </body>
 </html>
