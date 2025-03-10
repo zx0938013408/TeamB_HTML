@@ -2,6 +2,10 @@ body{
     background-color: #29755D;
 }
 
+.sportIndex{
+    position: relative;
+}
+
 .sport{
     z-index: 5;
 }
