@@ -6,6 +6,8 @@ body{
     z-index: 5;
 }
 
+.col{padding: 0;}
+
 .sportType{
     position: relative;
     padding: 0;
