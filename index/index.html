@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamB-index</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header -->
+    <header class="navbar-hd">
+        <div class="navbar-content">
+            <!-- Logo -->
+            <div class="logo-container">
+                <a href="#"><img src="../public/icon/logo-teamb.png" alt=""></a>
+            </div>
+    
+            <!-- 搜尋、購物車、登入按鈕 -->
+            <div class="navbar-actions">
+                <div class="search-container">
+                    <div class="search-icon
+                    ">
+                    <img src="../public/icon/icon-search.png" alt=""></div>
+                    
+                    <input type="text" placeholder="搜尋關鍵字" class="search-input">
+                </div>
+                <div>
+                    <a href="#"><img src="../public/icon/icon-cart.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="../public/icon/icon-user.png" alt=""></a>
+                </div>
+                <button class="quick-action-btn">快速開團</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 頂部導覽列 -->
+    <nav class="navbar-bt">
+        <div class="nav-container">
+            <!-- 活動列表 -->
+            <div class="nav-section">
+                <div class="nav-title">活動列表</div>
+                <a href="#" class="nav-link">活動列表</a>
+            </div>
+    
+            <!-- 商城 -->
+            <div class="nav-section">
+                <div class="nav-title">商城</div>
+                <a href="#" class="nav-link">上衣</a>
+                <a href="#" class="nav-link">褲裝</a>
+                <a href="#" class="nav-link">鞋類</a>
+                <a href="#" class="nav-link">運動用品</a>
+            </div>
+    
+            <!-- 關於 TeamB -->
+            <div class="nav-section">
+                <div class="nav-title">關於TeamB</div>
+                <a href="#" class="nav-link">品牌故事</a>
+                <a href="#" class="nav-link">聯繫我們</a>
+                <a href="#" class="nav-link">活動列表</a>
+            </div>
+    
+            <!-- 會員資訊 -->
+            <div class="nav-section">
+                <div class="nav-title">會員資訊</div>
+                <a href="#" class="nav-link">我的活動</a>
+                <a href="#" class="nav-link">訂單紀錄</a>
+                <a href="#" class="nav-link">我的帳戶</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區塊 -->
+    <section class="hero-container">
+        <div class="hero-content">
+            <!-- 中央分割線 -->
+            <div class="hero-divider"></div>
+
+            <!-- 左側 TeamB Logo -->
+            <div class="hero-left">
+                <div class="hero-logo">TeamB</div>
+            </div>
+
+            <!-- 右側內容 -->
+            <div class="hero-right">
+                <!-- 主要標題 -->
+                <div class="hero-text">
+                    <div class="hero-title">Where passion</div>
+                    <div class="hero-subtitle">meet the court</div>
+                </div>
+
+                <!-- 副標題與行動 -->
+                <div class="hero-action">
+                    <div class="hero-highlight">ㄟ!打球啦</div>
+                    <div class="hero-scroll">下滑前往報團 +1</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 球類選單 -->
+    <section class="sports-section">
+        <div class="container-fluid sports-container">
+            <!-- 第一排: 標題 -->
+            <div class="row g-0 row-1">
+                <div class="col-4 grid-item"></div> <!-- #1 空白 -->
+                <div class="col-4 grid-item title-box">
+                    <h2 class="sports-title">ㄟ咦!打球啦</h2>
+                    <p class="sports-subtitle">請選擇一種球類</p>
+                </div> <!-- #2 標題 -->
+                <div class="col-4 grid-item"></div> <!-- #3 空白 -->
+            </div>
+    
+            <!-- 第二排: 球類選擇 -->
+            <div class="row g-0 row-2">
+                <div class="col-4 grid-item volleyball">
+                    <div class="sports-icon volleyball-icon"></div>
+                    <p class="sports-text">前往報團</p>
+                </div>
+                <div class="col-4 grid-item basketball">
+                    <div class="sports-icon basketball-icon"></div>
+                    <p class="sports-text">前往報團</p>
+                </div>
+                <div class="col-4 grid-item badminton">
+                    <div class="sports-icon badminton-icon"></div>
+                    <p class="sports-text">前往報團</p>
+                </div>
+            </div>
+    
+            <!-- 第三排: 保持空白 -->
+            <div class="row g-0 row-3">
+                <div class="col-4 grid-item"></div>
+                <div class="col-4 grid-item"></div>
+                <div class="col-4 grid-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活動列表 -->
+    <section class="activity-container">
+        <h2 class="activity-title">活動訊息</h2>
+        <div class="activity-box">
+            <div class="activity-item"><a href="#">3/03 pm5:00 永康 羽潮 缺3人</a></div>
+            <div class="activity-item"><a href="#">3/03 pm5:00 永康 羽潮 缺3人</a></div>
+            <div class="activity-item"><a href="#">3/03 pm5:00 永康 羽潮 缺3人</a></div>
+            <div class="activity-item"><a href="#">3/03 pm5:00 永康 羽潮 缺3人</a></div>
+        </div>
+        <div class="activity-footer">
+            <a href="#" class="more-link">查看更多活動</a>
+        </div>
+    </section>
+
+    <!-- 購物商城 -->
+    <section class="shop-container">
+        <!-- 標題與促銷廣告 -->
+        <div class="shop-header">
+            <h2 class="shop-title">商城</h2>
+            <p class="shop-promo">(促銷廣告隨機出現) 球鞋 79 折起</p>
+        </div>
+
+        <!-- 商品區塊 -->
+        <div class="shop-product-list">
+            <div class="shop-product-card">
+                <div class="shop-product-image"></div>
+                <div class="shop-product-name">商品名稱</div>
+            </div>
+            <div class="shop-product-card">
+                <div class="shop-product-image"></div>
+                <div class="shop-product-name">商品名稱</div>
+            </div>
+            <div class="shop-product-card">
+                <div class="shop-product-image"></div>
+                <div class="shop-product-name">商品名稱</div>
+            </div>
+        </div>
+
+        <!-- 查看更多 -->
+        <div class="shop-footer">
+            <a href="#" class="more-link">查看更多商品</a>
+        </div>
+    </section>
+
+    <!-- 滾動slogan & 聯絡我們 -->
+    <section class="scroll-section">
+        <div class="scroll-container">
+            <div class="scroll-item" id="item1">
+                <h2>Play hard. Play together</h2>
+                <p>透過籃球建立友誼，共同努力，享受比賽的激情！</p>
+            </div>
+            <div class="scroll-item" id="item2">
+                <h2>This is why we play</h2>
+                <p>讓我們在球場上，突破極限，體驗熱血沸騰的時刻！</p>
+            </div>
+            <div class="scroll-item" id="item3">
+                <h2>Where passion meets the court</h2>
+                <p>TeamB 提供最佳運動場地，讓你盡情發揮！</p>
+            </div>
+            <div class="scroll-item contact-item" id="item4">
+                <div class="contact-container">
+                    <div class="contact-left">
+                        <h2 class="contact-title">TeamB</h2>
+                        <p class="contact-subtitle">聯繫我們</p>
+                    </div>
+                    <div class="contact-right">
+                        <form class="contact-form">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" placeholder="字字字">
+            
+                            <label for="email">電子郵件</label>
+                            <input type="email" id="email" placeholder="字字字">
+            
+                            <label for="message">意見回饋</label>
+                            <textarea id="message" placeholder="字字字"></textarea>
+            
+                            <button type="submit">字字字字字</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- 頁腳容器 -->
+    <footer class="footer-container">
+        <!-- 中間分隔線 -->
+        <div class="footer-divider">
+            <div class="line"></div>
+            <div><img src="../public/icon/logo-teamb.png" alt=""></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- 主要連結區 -->
+        <div class="footer-links">
+            <div class="footer-section">
+                <div class="footer-title">活動列表</div>
+                <a href="#" class="footer-link">活動列表</a>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-title">商城</div>
+                <a href="#" class="footer-link">上衣</a>
+                <a href="#" class="footer-link">褲裝</a>
+                <a href="#" class="footer-link">鞋類</a>
+                <a href="#" class="footer-link">運動用品</a>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-title">關於TeamB</div>
+                <a href="#" class="footer-link">品牌故事</a>
+                <a href="#" class="footer-link">聯繫我們</a>
+                <a href="#" class="footer-link">活動列表</a>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-title">會員資訊</div>
+                <a href="#" class="footer-link">我的活動</a>
+                <a href="#" class="footer-link">訂單紀錄</a>
+                <a href="#" class="footer-link">我的帳戶</a>
+            </div>
+        </div>
+
+        <!-- 版權資訊 & 社群連結 -->
+        <div class="footer-bottom">
+            <div class="copyright">Copyright © 2025 TeamB. All rights reserved.</div>
+            <div class="social-icons">
+                <div><a href="#"><img src="../public/icon/icon-IG.png" alt=""></a></div>
+                <div><a href="#"><img src="../public/icon/icon-facebook.png" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <!-- script -->
+    <script>
+    // 滾動輪播
+    document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(".scroll-container");
+
+        container.addEventListener("wheel", function (event) {
+            if (event.deltaY !== 0) { // 確保是垂直滾動
+                event.preventDefault(); // 阻止預設垂直滾動
+                container.scrollBy({
+                    left: event.deltaY * 1.5, // 控制滾動速度
+                    behavior: "smooth" // 平滑滾動
+                });
+            }
+        }, { passive: false }); // 確保 preventDefault() 有效
+    });
+
+        
+    </script>
+</body>
+</html>
