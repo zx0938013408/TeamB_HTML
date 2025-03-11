@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人檔案</title>
+    <link rel="stylesheet" href="member_like.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC&family=Satisfy&display=swap');
+        </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 側邊欄 -->
+      <div class="sidebar">
+        <a href="member.html" class="menu-item">會員中心</a>
+        <a href="member-edit.html" class="menu-item">編輯個人檔案</a>
+        <a href="member-edit2.html" class="menu-item">帳號管理</a>
+        <a href="#" class="menu-item">我的訂單</a>
+        <a href="#" class="menu-item">收藏活動</a>
+        <a href="member_like.html" class="menu-item">收藏商品</a>
+      </div>
+
+      <!-- 右側內容 -->
+      <div class="content">
+        <div class="profile-header">
+          <img src="imgs/images.jpeg" alt="Avatar" class="avatar" />
+          <div class="user-info">
+            <h2>LABUBU</h2>
+            <p>生日：1997/12/25</p>
+            <p>喜愛運動：籃球</p>
+          </div>
+        </div>
+
+        <!-- 分頁選單 -->
+        <div class="tab-menu">
+          <div class="tab-left">
+            <span class="tab-item active" onclick="showTab('registered')"
+              >已收藏商品</span
+            >
+          </div>
+
+          <!-- 搜尋框 -->
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="搜尋活動..."
+              onkeyup="searchActivities()"
+            />
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- 內容區塊 -->
+        <div class="tab-content" id="registered">
+          <!-- 第一件商品 -->
+          <div class="activity-card">
+            <div class="activity-left">
+              <img
+                class="activity-img"
+                src="../shop/products_pic/top-1.jpg"
+                alt="籃球"
+              />
+            </div>
+            <div class="activity-content">
+              <h3>Active Max 短袖運動上衣</h3>
+              <p class="price">NT$ 890</p>
+            </div>
+            <div class="activity-right">
+              <button class="status-btn green">取消收藏</button>
+            </div>
+          </div>
+
+          <!-- 第二件商品 -->
+          <div class="activity-card">
+            <div class="activity-left">
+              <img
+                class="activity-img"
+                src="../shop/products_pic/top-10.jpg"
+                alt="籃球"
+              />
+            </div>
+            <div class="activity-content">
+              <h3>Momentum 運動開襟外套</h3>
+              <p class="price">NT$ 1250</p>
+            </div>
+            <div class="activity-right">
+              <button class="status-btn green">取消收藏</button>
+              <!-- <button class="status-btn gray">額滿</button> -->
+            </div>
+          </div>
+          <!-- 第三件商品 -->
+          <div class="activity-card">
+            <div class="activity-left">
+              <img
+                class="activity-img"
+                src="../shop/products_pic/top-16.jpg"
+                alt="籃球"
+              />
+            </div>
+            <div class="activity-content">
+              <h3>CrossTrain 訓練長袖上衣</h3>
+              <p class="price">NT$ 1020</p>
+            </div>
+            <div class="activity-right">
+              <button class="status-btn green">取消收藏</button>
+              <!-- <button class="status-btn gray">額滿</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 顯示對應的分頁內容
+      function showTab(tabId) {
+        document.querySelectorAll(".tab-content").forEach((tab) => {
+          tab.classList.add("hidden");
+        });
+        document.getElementById(tabId).classList.remove("hidden");
+
+        document.querySelectorAll(".tab-item").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
