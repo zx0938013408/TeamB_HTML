@@ -1,0 +1,220 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* **主要容器** (適中寬度 & 置中) */
+.container {
+    display: flex;
+    max-width: 1200px;  /* 限制最大寬度 */
+    min-height: 600px;  /* 設定最小高度 */
+    width: 100%;         /* 避免過度壓縮 */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 50px auto;  /* 置中 */
+}
+
+/* 側邊欄 */
+.sidebar {
+    width: 220px;
+    background: #3F6D62;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background: #29755D;
+}
+
+/* 內容區 */
+.content {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* 頭像 & 用戶資訊 */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height: 10px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 分頁選單 */
+.tab-menu {
+    display: flex;
+    justify-content: space-between; /* 左右對齊 */
+    align-items: center;
+    padding: 10px 0;
+}
+
+.tab-item {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.tab-item.active {
+    border-bottom: 3px solid #3F6D62;
+}
+
+/* 內容區塊 */
+.tab-content {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+.tab-left {
+    display: flex;
+    gap: 20px;
+}
+
+.search-container {
+    position: relative;
+}
+
+#searchInput {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 200px; /* 調整寬度 */
+}
+
+#searchInput:focus {
+    border-color: #0F3D3E;
+}
+
+/* 活動卡片 */
+.activity-card {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* 左側圖片與收藏 */
+.activity-left {
+    position: relative;
+}
+
+.activity-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.heart {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 20px;
+}
+
+/* 活動內容 */
+.activity-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.activity-content h3 {
+    font-size: 18px;
+    color: #3F6D62;
+    margin: 0 0 30px 0;
+}
+
+/* .activity-content p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+} */
+
+.activity-content .price {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+/* 右側按鈕 */
+.activity-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.status-btn {
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 按鈕樣式 */
+.green {
+    background-color: #29755D;
+    color: white;
+}
+
+.gray {
+    background-color: #E5E5E5;
+    color: #999;
+}
+
+.white {
+    background-color: white;
+    border: 2px solid #3F6D62;
+    color: #3F6D62;
+}
+
+.status-btn.green:hover {
+    background-color: #3F6D62;
+}
+
+.status-btn.white:hover {
+    background-color: #f4f4f4;
+}
