@@ -45,7 +45,7 @@
         <div class="img col-1">
           <button type="button" class="collect">
             <img
-              src="./photo/icons/icon-heart.svg"
+              src="../public/icon/icon-heart-green.svg"
               alt="收藏按鈕"
               class="heart"
             />
@@ -55,7 +55,7 @@
           <div class="title row">
             <div class="titleIcons col-1">
               <img
-                src="./photo/icons/icon-shuttlecock.svg"
+                src="../public/icon/icon-shuttlecock-green.svg"
                 alt=""
                 class="titleIcon col"
               />
@@ -102,7 +102,7 @@
         <div class="img2 col-1">
           <button type="button" class="collect">
             <img
-              src="./photo/icons/icon-heart.svg"
+              src="../public/icon/icon-heart-green.svg"
               alt="收藏按鈕"
               class="heart"
             />
@@ -112,7 +112,7 @@
           <div class="title row">
             <div class="titleIcons col-1">
               <img
-                src="./photo/icons/icon-basketball.svg"
+                src="../public/icon/icon-basketball-green.svg"
                 alt=""
                 class="titleIcon col"
               />
@@ -159,7 +159,7 @@
         <div class="img3 col-1">
           <button type="button" class="collect">
             <img
-              src="./photo/icons/icon-heart.svg"
+              src="../public/icon/icon-heart-green.svg"
               alt="收藏按鈕"
               class="heart"
             />
@@ -169,7 +169,7 @@
           <div class="title row">
             <div class="titleIcons col-1">
               <img
-                src="./photo/icons/icon-basketball.svg"
+                src="../public/icon/icon-basketball-green.svg"
                 alt=""
                 class="titleIcon col"
               />
@@ -216,7 +216,7 @@
         <div class="img col-1">
           <button type="button" class="collect">
             <img
-              src="./photo/icons/icon-heart.svg"
+              src="../public/icon/icon-heart-green.svg"
               alt="收藏按鈕"
               class="heart"
             />
@@ -226,7 +226,7 @@
           <div class="title row">
             <div class="titleIcons col-1">
               <img
-                src="./photo/icons/icon-shuttlecock.svg"
+                src="../public/icon/icon-shuttlecock-green.svg"
                 alt=""
                 class="titleIcon col"
               />
@@ -273,7 +273,7 @@
         <div class="img col-1">
           <button type="button" class="collect">
             <img
-              src="./photo/icons/icon-heart.svg"
+              src="../public/icon/icon-heart-green.svg"
               alt="收藏按鈕"
               class="heart"
             />
@@ -283,7 +283,7 @@
           <div class="title row">
             <div class="titleIcons col-1">
               <img
-                src="./photo/icons/icon-shuttlecock.svg"
+                src="../public/icon/icon-shuttlecock-green.svg"
                 alt=""
                 class="titleIcon col"
               />
@@ -363,7 +363,7 @@
                 <div class="title row">
                     <div class="titleIcons col-1">
                       <img
-                        src="./photo/icons/icon-shuttlecock.svg"
+                        src="../public/icon/icon-shuttlecock-green.svg"
                         alt=""
                         class="titleIcon col"
                       />
@@ -409,10 +409,10 @@
       document.querySelector(".collect").addEventListener("click", function () {
         event.stopPropagation();
         const heartImg = this.querySelector(".heart"); // 選取按鈕內的 <img>
-        if (heartImg.src.includes("icon-heart.svg")) {
-          heartImg.src = "./photo/icons/icon-heart-click.svg"; // 點擊後變成實心愛心
+        if (heartImg.src.includes("icon-heart-green.svg")) {
+          heartImg.src = "../public/icon/icon-heart-click.svg"; // 點擊後變成實心愛心
         } else {
-          heartImg.src = "./photo/icons/icon-heart.svg"; // 再次點擊變回空心愛心
+          heartImg.src = "../public/icon/icon-heart-green.svg"; // 再次點擊變回空心愛心
         }
       });
     //   document.querySelector(".joinButton").addEventListener("click", function (event) {

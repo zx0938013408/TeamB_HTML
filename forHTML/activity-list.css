@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  width: 1000px;
+  width: 60%;
   background-color: #f4f4f4;
   margin: auto 100px;
   /* padding:  */
@@ -43,7 +43,7 @@ body {
 
 /* 開團按鈕 */
 .create{
-    width: 950px;
+    width: 97%;
     box-shadow: -3px -4px 4px rgba(0, 0, 0, 0.14) inset;
     border-radius: 10px;
     background-color: #f7bf58;
@@ -78,7 +78,7 @@ body {
   padding: 0;
   width: 215px;
   height: 215px;
-  background-image: url("./photo/img-shuttlecockCourt.jpg");
+  background-image: url("../public/photo/activity-shuttlecockCourt.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@ body {
   padding: 0;
   width: 215px;
   height: 215px;
-  background-image: url("./photo/img-basketballCourt.jpg");
+  background-image: url("../public/photo/activity-basketballCourt.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@ body {
   padding: 0;
   width: 215px;
   height: 215px;
-  background-image: url("./photo/img-volleyballCourt.jpg");
+  background-image: url("../public/photo/activity-volleyballCourt.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
