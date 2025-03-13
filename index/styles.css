@@ -225,7 +225,7 @@
 }
 
 .footer-title {
-  font-size: 38px;
+  font-size: 30px;
   font-family: Inter, sans-serif;
   font-weight: 700;
   letter-spacing: 7.6px;
@@ -235,7 +235,7 @@
 }
 
 .footer-link {
-  font-size: 26px;
+  font-size: 20px;
   font-family: Inter, sans-serif;
   font-weight: 700;
   letter-spacing: 6px;
@@ -259,7 +259,7 @@
 }
 
 .copyright {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
   color: white;
@@ -534,7 +534,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 /* ************** 活動列表 **************** */
