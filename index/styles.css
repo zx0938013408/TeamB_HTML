@@ -1,3 +1,10 @@
+/* ************** 全域設定 **************** */
+
+*{
+  a{
+    text-decoration: none;
+  }
+}
 
 /* ************** header **************** */
 .navbar-hd {
@@ -70,15 +77,16 @@
 
 
 /* 購物車、登入圖示 */
-.search-icon,
-.cart-icon,
-.login-icon {
-  width: 50px;
-  height: 50px;
+.icon-Search,
+.icon-Cart,
+.icon-User {
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  color: #528f7c;
+  font-size: 50px;
 }
 
 /* 快速開團按鈕 */
@@ -138,7 +146,7 @@
 
 /* 標題 */
 .nav-title {
-  font-size: 38px;
+  font-size: 36px;
   font-family: Inter, sans-serif;
   font-weight: 700;
   letter-spacing: 7.6px;
@@ -225,7 +233,7 @@
 }
 
 .footer-title {
-  font-size: 38px;
+  font-size: 36px;
   font-family: Inter, sans-serif;
   font-weight: 700;
   letter-spacing: 7.6px;
@@ -272,10 +280,11 @@
   gap: 30px;
 }
 
-.social-icon {
-  width: 30px;
-  height: 30px;
-  background: white;
+.icon-Fb,
+.icon-Ig,
+.icon-Mail {
+  font-size: 30px;
+  color: white;
 }
 
 /* ************** 主視覺區塊 **************** */
@@ -497,30 +506,21 @@
 }
 
 /* 排球圖示 */
-.volleyball-icon {
-  width: 100px;
-  height: 100px;
-  background-image: url('../public/icon/icon-volleyball.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+.icon-Volleyball {
+  font-size: 90px;
+  color:white
 }
 
 /* 籃球圖示 */
-.basketball-icon {
-  width: 100px;
-  height: 100px;
-  background-image: url('../public/icon/icon-bascketball.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+.icon-Basketball {
+  font-size: 90px;
+  color:white
 }
 
 /* 羽球圖示 */
-.badminton-icon {
-  width: 100px;
-  height: 100px;
-  background-image: url('../public/icon/icon-badminton.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+.icon-Badminton {
+  font-size: 90px;
+  color:white
 }
 
 /* 預設隱藏 "前往報團" */
@@ -818,9 +818,9 @@
 
 
 /* 設定每個圖片區塊的背景 */
-#item1 { background: url('/public/photo/slogan-volleyball.png') center/cover no-repeat; }
-#item2 { background: url('/public/photo/slogan-bedminton.png') center/cover no-repeat; }
-#item3 { background: url('/public/photo/slogan-basketball.png') center/cover no-repeat; }
+#item1 { background: url('/public/photo/slogan_volleyball.png') center/cover no-repeat; }
+#item2 { background: url('/public/photo/slogan_badminton.png') center/cover no-repeat; }
+#item3 { background: url('/public/photo/slogan_basketball.png') center/cover no-repeat; }
 #item4 { background: #2D5A4D; }
 
 /* 第一個輪播頁 - 聯絡我們 */
