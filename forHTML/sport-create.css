@@ -188,7 +188,7 @@ a {text-decoration: none;}
 /* Modal */
 
 .modal-content{
-    width: 800px;
+    width: 600px;
     left: 50%;
     transform: translateX(-50%);
 }
