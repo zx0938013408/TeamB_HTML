@@ -16,6 +16,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../TeamB_Icon/style.css">
     <link rel="stylesheet" href="./sport-create.css" />
     <title>活動開團 - TeamB</title>
   </head>
@@ -78,41 +79,56 @@
 
 
 
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header modalWidth">
-          <h5 class="modal-title inputTitle" id="staticBackdropLabel">建立<span>籃球</span>活動</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body modalWidth">
-          <label for="activityName">活動名稱</label> <br>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header modalWidth">
+              <h5 class="modal-title inputTitle" id="staticBackdropLabel">
+                <span class="icon-Basketball"></span>建立<span>籃球</span>活動
+              </h5>
+              <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modalWidth">
+              <label for="activityName">活動名稱</label> <br>
               <input type="text" id="activityName" name="activityName" class="createInput" placeholder="活動名稱" required>
-              <br>
               <label for="address">活動地點</label> <br>
-              <input type="text" id="address" name="address" class="createInput"  placeholder="球館 / 地點" required>
-              <br>
-              <label for="activityTime">活動時間</label> <br>
-              <input type="datetime-local" id="activityTime" name="activityTime" class="createInput"  required>
-              <br>
-              <label for="registerTime">報名截止期限</label> <br>
-              <input type="datetime-local" id="registerTime" name="registerTime" class="createInput"  required>
-              <br>
-              <label for="memberNumber">需求人數</label> <br>
-              <input type="number" id="memberNumber" name="memberNumber" class="createInput"  required>
-              <br>
-              <label for="price">費用(每人)</label> <br>
-              <input type="number" id="price" name="price" class="createInput"  required>
-              <br> <br>
-              <textarea name="note" id="note" class="createInput"  placeholder="備註： 本活動歡迎新手參加"></textarea>
-        </div>
-        <div class="modal-footer modalWidth">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-          <button type="button" class="btn btn-primary">確定建立</button>
+                  <select class="createInput" aria-label="Default select example">
+                    <option selected>--請選擇地區--</option>
+                    <option value="1">東區</option>
+                    <option value="2">南區</option>
+                    <option value="3">永康區</option>
+                  </select>
+                  <input type="text" id="address" name="address" class="createInput"  placeholder="球館 / 地點" required>
+                  <br>
+                  <label for="activityTime">活動時間</label> <br>
+                  <input type="datetime-local" id="activityTime" name="activityTime" class="createInput"  required>
+                  <br>
+                  <label for="registerTime">報名截止期限</label> <br>
+                  <input type="datetime-local" id="registerTime" name="registerTime" class="createInput"  required>
+                  <br>
+                  <label for="memberNumber">需求人數</label> <br>
+                  <input type="number" id="memberNumber" name="memberNumber" class="createInput"  required>
+                  <br>
+                  <label for="price">費用(每人)</label> <br>
+                  <input type="number" id="price" name="price" class="createInput"  required>
+                  <br>
+                  <div class="row">
+                    <div class="titleImg">新增封面相片 (最多4張)</div>
+                    <div class="uploadImg col">+</div>
+                    <div class="uploadImg col">+</div>
+                    <div class="uploadImg col">+</div>
+                    <div class="uploadImg col">+</div>
+                  </div>
+                  <br>
+                  <textarea name="note" id="note" class="createInput"  placeholder="備註： 本活動歡迎新手參加"></textarea>
+            </div>
+            <div class="modal-footer modalWidth">
+              <button type="button" class="btn btn-secondary closeModal" data-bs-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary">確定建立</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
