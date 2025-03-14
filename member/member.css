@@ -1,0 +1,120 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* **主要容器** (適中寬度 & 置中) */
+.container {
+    display: flex;
+    max-width: 1200px;  /* 限制最大寬度 */
+    min-height: 600px;  /* 設定最小高度 */
+    width: 100%;         /* 避免過度壓縮 */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 50px auto;  /* 置中 */
+}
+
+/* 側邊欄 */
+.sidebar {
+    width: 220px;
+    background: #3F6D62;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background: #29755D;
+}
+
+/* 內容區 */
+.content {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* 頭像 & 用戶資訊 */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height: 10px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 分頁選單 */
+.tab-menu {
+    display: flex;
+    justify-content: space-between; /* 左右對齊 */
+    align-items: center;
+    padding: 10px 0;
+}
+
+.tab-item {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.tab-item.active {
+    border-bottom: 3px solid #3F6D62;
+}
+
+/* 內容區塊 */
+.tab-content {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+.tab-left {
+    display: flex;
+    gap: 20px;
+}
+
+.search-container {
+    position: relative;
+}
+
+#searchInput {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 200px; /* 調整寬度 */
+}
+
+#searchInput:focus {
+    border-color: #0F3D3E;
+}

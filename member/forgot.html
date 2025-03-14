@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamB 重置密碼</title>
+    <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左側區塊 -->
+        <div class="left-section">
+            <div class="reset-section">
+                <h1>重置密碼</h1>
+                <div class="separator"></div>
+                <p>請輸入帳號使用的電子郵件地址以繼續。</p>
+            </div>
+        </div>
+
+        <!-- 右側區塊 -->
+        <div class="right-section">
+            <form action="reset-password.php" method="POST">
+                <!-- 電子郵件 -->
+                <label for="email">電子郵件</label>
+                <input type="email" id="email" name="email" placeholder="請輸入電子郵件" required>
+                <!-- 送出按鈕 -->
+                 <div class="submit-section">
+                    <button type="submit" class="submit-btn">送出</button>
+                 </div>
+             
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* 全局設定 */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #E5E5E5;
+}
+
+/* ✅ 主要容器 */
+.container {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* ✅ 左側區塊 */
+.left-section {
+    width: 50%;
+    background: #0F3D3E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-section h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* ✅ 右側區塊 */
+.right-section {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0F3D3E;
+    margin-bottom: 25px;
+}
+
+/* ✅ 輸入框樣式 */
+.input-box {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 98%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #0F3D3E;
+}
+
+/* ✅ 註冊按鈕 */
+.submit-section {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #0F3D3E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background: #146C94;
+}
+
+/* ✅ 連結區域 */
+.links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.links a {
+    text-decoration: none;
+    color: #0F3D3E;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>編輯個人檔案</title>
+    <link rel="stylesheet" href="/member-edit.css" />
+  </head>
+  <body>
+        <div class="container">
+            <!-- 側邊欄 -->
+            <div class="sidebar">
+                <a href="member.html" class="menu-item ">會員中心</a>
+                <a href="member-edit.html" class="menu-item ">編輯個人檔案</a>
+                <a href="member-edit2.html" class="menu-item" >帳號管理</a>
+                <a href="#" class="menu-item">我的訂單</a>
+                <a href="#" class="menu-item">收藏商品</a>
+            </div>
+      <div class="main-content">
+          <div class="title">編輯個人檔案</div>
+          <div class="right-section">
+              <form id="profile-form" enctype="multipart/form-data">
+                  <div class="avatar-container">
+                      <div class="avatar">
+                          <img id="avatar-preview" src="./imgs/images.jpeg" alt="Avatar" />
+                      </div>
+                      <label for="avatar-upload" class="upload-label">更換頭像</label>
+                      <input type="file" id="avatar-upload" name="avatar" accept="image/*" />
+                  </div>
+                  <div class="form">
+                      <input class="input-box" type="text" id="name" name="name" placeholder="姓名" required />
+                      <select class="select-box" id="gender" name="gender" required>
+                          <option value="" disabled selected hidden>性別</option>
+                          <option value="male">男</option>
+                          <option value="female">女</option>
+                          <option value="other">其他</option>
+                      </select>
+                      <div class="checkbox-group">
+                          <label>喜愛運動：</label>
+                          <div class="checkbox-item">
+                              <input type="checkbox" id="basketball" name="sports" value="basketball">
+                              <label for="basketball">籃球</label>
+                          </div>
+                          <div class="checkbox-item">
+                              <input type="checkbox" id="volleyball" name="sports" value="volleyball">
+                              <label for="volleyball">排球</label>
+                          </div>
+                          <div class="checkbox-item">
+                              <input type="checkbox" id="badminton" name="sports" value="badminton">
+                              <label for="badminton">羽球</label>
+                          </div>
+                          <div class="checkbox-item">
+                              <input type="checkbox" id="all" name="sports" value="all">
+                              <label for="all">全選</label>
+                          </div>
+                      </div>
+                      <input class="input-box" type="text" id="phone" name="phone" placeholder="手機" required />
+                      <input class="input-box" type="text" id="address" name="address" placeholder="地址" required />
+                      <div class="confirm">
+                          <button type="submit" class="confirm-btn">確認</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+
+  <script>
+document.getElementById("avatar-upload").addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById("avatar-preview").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+  </script>
+</html>
+

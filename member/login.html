@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamB 登入</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左側區塊 -->
+        <div class="left-section">
+            <h1>TeamB</h1>
+        </div>
+
+        <!-- 右側區塊 -->
+        <div class="right-section">
+            <form action="login-process.php" method="POST">
+                <h2>登入</h2>
+                <div class="input-box">
+                    <label for="username">電子郵件</label>
+                    <input type="text" id="username" name="username" placeholder="請輸入電子郵件" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">密碼</label>
+                    <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+                </div>
+    
+                <div class="submit-section"
+                >
+                <button type="submit" class="login-btn">登入</button></div>
+              
+
+                <div class="links">
+                    <a href="forgot.html" class="forgot-link">忘記密碼</a>
+                    <span>尚未註冊？</span>
+                    <a href="register.html" class="register-link">前往註冊會員</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

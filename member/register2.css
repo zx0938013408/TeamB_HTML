@@ -1,0 +1,131 @@
+/* 全局設定 */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #E5E5E5;
+}
+
+/* ✅ 主要容器 */
+.container {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* ✅ 左側區塊 */
+.left-section {
+    width: 40%;
+    background: #0F3D3E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.left-section h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* ✅ 右側區塊 (表單) */
+.form {
+    width: 60%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ✅ 輸入框樣式 */
+.input-box
+ {
+    width: 98%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.select-box{
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 30px;
+
+}
+.input-box:focus,
+.select-box:focus {
+    border-color: #0F3D3E;
+}
+
+/* ✅ 勾選框群組 */
+.checkbox-group {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    width: 99%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.checkbox-group:focus{
+    border-color: #0F3D3E;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    
+}
+
+/* ✅ 送出按鈕 */
+.submit-section {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.submit-button {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #0F3D3E;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: #146C94;
+}
