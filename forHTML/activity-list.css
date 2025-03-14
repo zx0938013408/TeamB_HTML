@@ -2,11 +2,13 @@ body {
   /* background-color: #A3C4BA; */
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
+
 }
 
 .container {
   width: 60%;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   margin: auto 100px;
   /* padding:  */
   /* margin-left: 100px; */
@@ -66,6 +68,12 @@ body {
   /* width: 1440px; */
   /* height: 330px; */
   padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  margin-bottom: 20px;
+
+
 
   &:hover{
     background-color: #e4e4e4;
@@ -180,15 +188,14 @@ body {
 .joinButton {
   width: 140px;
   height: 140px;
-  box-shadow: -2px -2px 10px rgba(41, 117, 93, 0.46) inset;
   border-radius: 10px;
-  background-color: #bde6d9;
-  border: 2px solid rgba(41, 117, 93, 0.39);
   box-sizing: border-box;
   font-size: 30px;
   font-weight: bold;
-  color: #3f6d62;
   margin-bottom: 15px;
+  background-color: #29755D;
+  color: white;
+  border: none;
 
   &:active {
     background-color: #7aaa9b;
@@ -241,16 +248,15 @@ body {
 }
 
 .register{
-  box-shadow: -2px -2px 10px rgba(41, 117, 93, 0.46) inset;
   border-radius: 10px;
-  background-color: #bde6d9;
-  border: 2px solid rgba(41, 117, 93, 0.39);
   box-sizing: border-box;
   /* font-size: 30px; */
   font-weight: bold;
-  color: #3f6d62;
   height: 40px;
   /* margin-bottom: 15px; */
+  background-color: #29755D;
+  color: white;
+  border: none;
 
 
   &:active {
