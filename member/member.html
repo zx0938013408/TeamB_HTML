@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人檔案</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 側邊欄 -->
+        <div class="sidebar">
+            <a href="member.html" class="menu-item ">會員中心</a>
+            <a href="member-edit.html" class="menu-item ">編輯個人檔案</a>
+            <a href="member-edit2.html" class="menu-item" >帳號管理</a>
+            <a href="#" class="menu-item">我的訂單</a>
+            <a href="#" class="menu-item">收藏商品</a>
+        </div>
+
+        <!-- 右側內容 -->
+        <div class="content">
+            <div class="profile-header">
+                <img src="imgs/images.jpeg" alt="Avatar" class="avatar">
+                <div class="user-info">
+                    <h2>LABUBU</h2>
+                    <p>生日：1997/12/25</p>
+                    <p>喜愛運動：籃球</p>
+                </div>
+            </div>
+
+            <!-- 分頁選單 -->
+            <div class="tab-menu">
+                <div class="tab-left">
+                    <span class="tab-item active" onclick="showTab('registered')">已報名</span>
+                    <span class="tab-item " onclick="showTab('starting')">已開團</span>
+                    <span class="tab-item " onclick="showTab('history')">活動歷史</span>
+                    <span class="tab-item" onclick="showTab('favorite')">收藏的活動</span>
+                </div>
+                
+                <!-- 搜尋框 -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="搜尋活動..." onkeyup="searchActivities()">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- 內容區塊 -->
+            <div class="tab-content" id="registered">
+                <h3>已報名活動</h3>
+                <p>這裡顯示已報名的活動內容。</p>
+            </div>
+            <div class="tab-content hidden"  id="starting">
+                <h3>已開團</h3>
+                <p>這裡顯示已開團的活動內容。</p>
+            </div>
+
+            <div class="tab-content hidden" id="history">
+                <h3>活動歷史</h3>
+                <p>這裡顯示參加過的活動歷史。</p>
+            </div>
+            <div class="tab-content hidden" id="favorite">
+                <h3>收藏的活動</h3>
+                <p>這裡顯示收藏活動。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 顯示對應的分頁內容
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+            });
+            document.getElementById(tabId).classList.remove('hidden');
+
+            document.querySelectorAll('.tab-item').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+       
+    
+    </script>
+</body>
+</html>

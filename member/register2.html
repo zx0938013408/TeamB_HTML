@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamB 註冊</title>
+    <link rel="stylesheet" href="register2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左側區塊 -->
+        <div class="left-section">
+            <h1>TeamB</h1>
+        </div>
+
+        <!-- 右側區塊 -->
+        <form action="register-process.php" method="POST" class="form">
+            <input class="input-box" type="text" name="name" placeholder="姓名" required>
+            
+            <select class="select-box" name="gender" required>
+                <option value="" disabled selected hidden>性別</option>
+                <option value="male">男</option>
+                <option value="female">女</option>
+                <option value="other">其他</option>
+            </select>
+
+            <div class="checkbox-group">
+                <label>喜愛運動：</label>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="basketball" name="sports[]" value="basketball">
+                    <label for="basketball">籃球</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="volleyball" name="sports[]" value="volleyball">
+                    <label for="volleyball">排球</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="badminton" name="sports[]" value="badminton">
+                    <label for="badminton">羽球</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="all" name="sports[]" value="all">
+                    <label for="all">全選</label>
+                </div>
+            </div>
+
+            <input class="input-box" type="text" name="phone" placeholder="手機" required>
+            <input class="input-box" type="text" name="address" placeholder="地址" required>
+            <div class="submit-section">
+                <button type="submit" class="submit-button">完成</button>
+            </div>
+           
+        </form>
+    </div>
+</body>
+</html>

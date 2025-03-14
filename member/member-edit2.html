@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>帳號管理</title>
+    <link rel="stylesheet" href="/member-edit.css" />
+</head>
+<body>
+        <div class="container">
+            <!-- 側邊欄 -->
+            <div class="sidebar">
+                <a href="member.html" class="menu-item ">會員中心</a>
+                <a href="member-edit.html" class="menu-item ">編輯個人檔案</a>
+                <a href="member-edit2.html" class="menu-item" >帳號管理</a>
+                <a href="#" class="menu-item">我的訂單</a>
+                <a href="#" class="menu-item">收藏商品</a>
+            </div>
+        <div class="main-content">
+            <div class="title">帳號管理</div>
+            <div class="right-section">
+                <form class="form" action="process-account.php" method="POST">
+                    <input class="input-box" type="text" name="account" placeholder="帳號" required />
+                    <input class="input-box" type="password" name="password" placeholder="密碼" required />
+                    <div class="confirm">
+                        <button type="submit" class="confirm-btn">確認</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
