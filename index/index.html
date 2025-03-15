@@ -329,6 +329,9 @@
             let tl = gsap.timeline();
             gsap.registerPlugin(MotionPathPlugin);
 
+            // 隱藏 Header 和 球類選單
+            gsap.set([".navbar-bt",".navbar-hd"], {  opacity: 0, y: "-100%", position: "absolute", display: "flex" });
+            gsap.set([".sports-section"], { opacity: 0, display: "none" });
             // 隱藏文字初始狀態
             gsap.set([".hero-logo", ".hero-title", ".hero-subtitle", ".hero-highlight", ".hero-scroll"], { opacity: 0 });
 
@@ -414,7 +417,14 @@
                         ease: "power3.in", // 讓離開畫面有更自然的加速
                         scale: 0.6, // 逐漸縮小
                         opacity: 0 // 逐漸消失
+
+                        
                     });
+                        // 動畫結束後等 7 秒才隱藏 Hero
+                        tl.to(".hero-container", { duration: 1, opacity: 0, display: "none" }, "+=7")  
+                        .to(".sports-section", { duration: 1, opacity: 1, display: "flex" }, "+=0") // **Hero 隱藏後馬上顯示球類選單**
+                        .to(".navbar-hd", { duration: 1.5, opacity: 1, y: "0%", position: "fixed", ease: "power2.out" }, "+=1") // **Header 以滑入方式出現**
+                        .to(".sports-section", { duration: 1, marginTop: "130px", ease: "power2.out" }, "-=1.3"); // **同步 Header 出現時，讓球類選單下移**
                 });
             });
 

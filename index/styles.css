@@ -9,7 +9,7 @@
 /* ************** header **************** */
 .navbar-hd {
   width: 100%;
-  height: 200px;
+  height: 130px;
   padding: 50px;
   background: #F4F4F4;
   border-bottom: 3px solid #528F7C;
@@ -17,6 +17,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed; /* 確保它是固定在最上方 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Navbar 內容 */
