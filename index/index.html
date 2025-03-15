@@ -44,6 +44,11 @@
                     <a href="#"><span class="icon-User"></span></a>
                 </div>
                 <button class="quick-action-btn">快速開團</button>
+                <div class="navbar-toggle">
+                    <button id="toggle-navbar" class="toggle-btn">
+                        <span class="icon-Dropdown"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -80,6 +85,12 @@
                 <a href="#" class="nav-link">我的活動</a>
                 <a href="#" class="nav-link">訂單紀錄</a>
                 <a href="#" class="nav-link">我的帳戶</a>
+            </div>
+
+            <div class="nav-section navbar-close">
+                <button id="close-navbar" class="close-btn">
+                    <i class="icon-Dropup"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -330,7 +341,7 @@
             gsap.registerPlugin(MotionPathPlugin);
 
             // 隱藏 Header 和 球類選單
-            gsap.set([".navbar-bt",".navbar-hd"], {  opacity: 0, y: "-100%", position: "absolute", display: "flex" });
+            gsap.set([".navbar-hd"], {  opacity: 0, y: "-100%", position: "absolute", display: "flex" });
             gsap.set([".sports-section"], { opacity: 0, display: "none" });
             // 隱藏文字初始狀態
             gsap.set([".hero-logo", ".hero-title", ".hero-subtitle", ".hero-highlight", ".hero-scroll"], { opacity: 0 });
@@ -427,7 +438,27 @@
                         .to(".sports-section", { duration: 1, marginTop: "130px", ease: "power2.out" }, "-=1.3"); // **同步 Header 出現時，讓球類選單下移**
                 });
             });
+            
+                    // header & navbar 按鈕功能
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleNavbarBtn = document.getElementById("toggle-navbar");
+    const closeNavbarBtn = document.getElementById("close-navbar");
+    const navbarBt = document.querySelector(".navbar-bt");
 
+    // 切換 navbar 顯示與隱藏
+    toggleNavbarBtn.addEventListener("click", function () {
+        if (navbarBt.classList.contains("active")) {
+            navbarBt.classList.remove("active");
+        } else {
+            navbarBt.classList.add("active");
+        }
+    });
+
+    // 收起 navbar
+    closeNavbarBtn.addEventListener("click", function () {
+        navbarBt.classList.remove("active");
+    });
+});
     </script>
 </body>
 
