@@ -1,10 +1,12 @@
 /* ************** 全域設定 **************** */
 
 *{
+  font-family: "Inder", sans-serif;
   a{
     text-decoration: none;
   }
 }
+
 
 /* ************** header **************** */
 .navbar-hd {
